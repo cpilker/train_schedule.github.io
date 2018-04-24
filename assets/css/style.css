@@ -1,0 +1,12 @@
+.form-group, .wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.input, #submit {
+    margin-bottom: 10px;
+}
+
+.jumbotron {
+    text-align: center;
+}

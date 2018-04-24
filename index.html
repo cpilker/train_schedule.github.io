@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Train Schedule</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    
+    <!-- Moments java query-->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+    <!--Firebase-->
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+
+    <!-- Local Script-->
+    <script src="./assets/javascript/Moment.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Anytime is Train Time</h1>
+            <p>Choo Choo! Chee Chee!</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Current Train Schedule</h3>
+            </div>
+            <!-- Table -->
+            <div class="wrapper">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Train Name</th>
+                            <th scope="col">Destination</th>
+                            <th scope="col">Frequency (min)</th>
+                            <th scope="col">Next Arrival</th>
+                            <th scope="col">Minutes Away</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container" id="Add-train">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Add Train</h3>
+            </div>
+            <div class="panel-body">
+                <div class="form-group row">
+                    <div id="Name">
+                        <label for="Train name">Train Name</label>
+                        <input class="form-control input" id="train-name" type="text">
+                    </div>
+                    <div id="Destination">
+                        <label for="destination">Destination</label>
+                        <input class="form-control input" id="train-destination" type="text">
+                    </div>
+                    <div id="Frequency">
+                        <label for="frequency">Frequency (min)</label>
+                        <input class="form-control input" id="train-frequency" type="number">
+                    </div>
+                    <div id="First Train">
+                        <label for="arrival">First Train</label>
+                        <input class="form-control input" id="train-arrival" type="time">
+                    </div>
+                    
+                    <button class="btn btn-primary" id="submit" type="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Start javascript-->
+   <!-- <script type="text/javascript">
+ 
+    
+    </script>-->
+    
+</body>
+</html>
